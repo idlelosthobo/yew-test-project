@@ -7,8 +7,8 @@ use yew::prelude::*;
 pub fn app() -> Html {
     html! {
         <div class="container-fluid">
-            <nav::TopNavigation></nav::TopNavigation>
-            <game::Game></game::Game>
+            <nav::TopNavigation/>
+            <game::Game/>
         </div>
     }
 }

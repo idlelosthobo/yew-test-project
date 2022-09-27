@@ -1,27 +1,27 @@
 mod cell;
 
-use yew::prelude::*;
+use yew::{prelude::*, props};
 
+#[derive(Properties, PartialEq)]
 struct Puzzle {
     size: i32,
 }
 
-fn generate_puzzle(size: i32) -> Puzzle {
-    return Puzzle { size };
-}
-
 #[function_component(PuzzleBoard)]
 pub fn puzzle_board() -> Html {
-    let _puzzle = generate_puzzle(9);
-    let _puzzle_list: Vec<cell::Cell> = Vec::new();
-
-    for i in 0.._puzzle.size {
-        _puzzle_list.push(cell::Cell<Html>)
-    }
-
+    let tacos = vec![
+        cell::CellProps {number: 1},
+        cell::CellProps {number: 2},
+        cell::CellProps {number: 3},
+        cell::CellProps {number: 4},
+        cell::CellProps {number: 5},
+        ];
+    let videos = tacos.iter().map(|cell_data| html! {
+        <cell::Cell number={cell_data.number} />
+    }).collect::<Html>();
     html! {
         <>
-            { for _puzzle_list.iter() }
+            {videos}
         </>
     }
 }
