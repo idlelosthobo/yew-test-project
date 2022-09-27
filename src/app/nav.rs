@@ -4,10 +4,13 @@ use yew::prelude::*;
 pub fn top_navigation() -> Html {
     let _number: i32 = 20;
     html! {
-        <div class="row">
-            <div class="col-12 sticky-top">
-            {"Navigations"}
-            <a href="#">{"TEdious"}</a>
+        <div class="row sticky-top">
+            <div class="col-12 px-0">
+                <nav class="navbar bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">{"KenKen"}</a>
+                    </div>
+                </nav>
             </div>
         </div>
     }
