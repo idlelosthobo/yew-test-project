@@ -7,7 +7,7 @@ pub fn game() -> Html {
     html! {
         <div class="row">
             <div class="col-12">
-                <puzzle::PuzzleBoard></puzzle::PuzzleBoard>
+                <puzzle::PuzzleBoard/>
             </div>
         </div>
     }
