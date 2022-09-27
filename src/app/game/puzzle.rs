@@ -1,6 +1,6 @@
 mod cell;
 
-use yew::{prelude::*, props};
+use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 struct Puzzle {
