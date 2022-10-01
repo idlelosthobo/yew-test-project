@@ -8,7 +8,7 @@ pub fn app() -> Html {
     html! {
         <div class="container-fluid">
             <nav::TopNavigation/>
-            <game::Game/>
+            <game::GameComponent/>
         </div>
     }
 }
