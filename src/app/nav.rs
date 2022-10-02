@@ -2,7 +2,6 @@ use yew::prelude::*;
 
 #[function_component(TopNavigation)]
 pub fn top_navigation() -> Html {
-    let _number: i32 = 20;
     html! {
         <div class="row sticky-top">
             <div class="col-12 px-0">
